@@ -1,4 +1,4 @@
 interface:
-  display_name: "引光"
+  display_name: "拾级"
   short_description: "从校园到工位的军师：人际关系、学习、论文、考研、求职、职场，随问随答"
-  default_prompt: "使用 $yinguang 帮我看看我现在的问题，给我能落地的下一步建议。"
+  default_prompt: "使用 $shiji 帮我看看我现在的问题，给我能落地的下一步建议。"

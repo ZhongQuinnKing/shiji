@@ -1,9 +1,9 @@
-# 引光 · 从校园到工位的军师
+# 拾级 · 从校园到工位的军师
 
 **装进你 AI 里的一位"过来人"**——从大一第一次和室友闹别扭，到入职后第一次向领导汇报：
 人际关系、学习方法、毕业论文、考研、求职、职场，**你问什么，它答什么。**
 
-**怎么用（30 秒）**：把它装进豆包（或 Claude 等 AI 助手）→ 直接说话——
+**怎么用（30 秒）**：把它装进Claude（或豆包等 AI 助手）→ 直接说话——
 "帮我做一份简历""室友半夜打游戏怎么办""导师怎么选"。不用记指令，不用自报身份。
 
 **现在有什么**：
@@ -78,7 +78,7 @@
 
 在豆包里直接说这一句，它自己就装好了：
 
-> 请把 https://github.com/ZhongQuinnKing/yinguang 下载并安装为技能
+> 请把 https://github.com/ZhongQuinnKing/shiji 下载并安装为技能
 
 （这条依赖网络能访问 GitHub；国内网络不便的话走路径二）
 
@@ -93,7 +93,7 @@
 **Claude Code / Codex 等命令行 AI**
 
 ```bash
-git clone https://github.com/ZhongQuinnKing/yinguang ~/.claude/skills/yinguang
+git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
 ```
 
 **装好之后怎么用**
