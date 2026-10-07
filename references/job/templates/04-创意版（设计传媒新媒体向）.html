@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; color:#2b2b2b;
+         line-height:1.55; font-size:14px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:18mm 20mm; margin:0 auto; background:#fff; }
+  h1 { font-size:30px; letter-spacing:1px; margin-bottom:2px; }
+  h1::after { content:""; display:block; width:38px; height:3px;
+              background:#c2502e; margin-top:6px; }   /* 唯一的强调色，克制 */
+  .contact { font-size:13px; color:#555; margin:10px 0 16px; }
+  .contact span:not(:last-child)::after { content:"  /  "; color:#bbb; }
+  h2 { font-size:13px; color:#c2502e; letter-spacing:3px; margin:16px 0 7px; }
+  .item { margin-bottom:11px; }
+  .row { display:flex; justify-content:space-between; font-weight:600; }
+  .row .time { font-weight:400; color:#888; }
+  ul { margin-left:18px; }
+  li { margin-bottom:3px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:16mm 18mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>【姓名】</h1>
+  <div class="contact">
+    <span>【电话】</span><span>【邮箱】</span><span>求职意向：【岗位】</span><span>【作品集链接】</span>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】 ｜ 【专业】 ｜ 【学历】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【GPA / 相关课程】</li></ul>
+  </div>
+
+  <h2>实习经历</h2>
+  <div class="item">
+    <div class="row"><span>【公司】 ｜ 【岗位】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【作品导向：做了什么内容/产出 + 数据结果】</li></ul>
+  </div>
+
+  <h2>项目与作品</h2>
+  <div class="item">
+    <div class="row"><span>【项目/作品名】 ｜ 【角色】</span><span class="time">【时间】</span></div>
+    <ul><li>【创作过程 + 产出 + 反馈数据】</li></ul>
+  </div>
+
+  <h2>技能与证书</h2>
+  <ul>
+    <li>【工具：Figma/PR/PS 等，写到能验证的程度】</li>
+    <li>【语言 / 证书】</li>
+  </ul>
+</div>
+</body>
+</html>

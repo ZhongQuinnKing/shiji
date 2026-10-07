@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+profile/
+.DS_Store
+施工方案.md

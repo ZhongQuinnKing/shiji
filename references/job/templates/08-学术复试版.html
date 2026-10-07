@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"SimSun","宋体",Georgia,serif;
+         color:#111; line-height:1.55; font-size:14.5px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  .head { text-align:center; margin-bottom:10px; }
+  h1 { font-size:24px; letter-spacing:5px; margin-bottom:6px; }
+  .contact { font-size:13px; color:#444; }
+  .contact span { margin:0 8px; }
+  h2 { font-size:15px; margin:14px 0 7px; padding-bottom:3px;
+       border-bottom:1.5px solid #111; letter-spacing:2px; }
+  .item { margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; font-weight:700; }
+  .row .time { font-weight:400; }
+  ul { margin-left:20px; }
+  li { margin-bottom:3px; }
+  .paper { margin-left:20px; text-indent:-20px; }  /* 论文条目悬挂缩进 */
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <h1>【姓名】</h1>
+    <div class="contact">
+      <span>【电话】</span><span>【邮箱】</span><span>报考方向：【专业 / 方向】</span>
+    </div>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】 ｜ 【专业】 ｜ 【学历】</span><span class="time">【起止时间】</span></div>
+    <ul>
+      <li>【GPA：x.x/x.x（专业排名 x/xx）——复试简历成绩要写清】</li>
+      <li>【核心课程（与报考方向相关的）】</li>
+    </ul>
+  </div>
+
+  <h2>科研与项目经历（复试核心区）</h2>
+  <div class="item">
+    <div class="row"><span>【课题/项目名】 ｜ 【你的角色】</span><span class="time">【时间】</span></div>
+    <ul>
+      <li>【研究问题 + 你做了什么（方法/实验/数据）+ 结果】</li>
+      <li>【你的贡献点：哪部分是你独立完成的】</li>
+    </ul>
+  </div>
+
+  <h2>论文与成果</h2>
+  <div class="item">
+    <div class="paper">【作者. 标题. 期刊/会议, 年份.（状态：已发表/在投/在写）】</div>
+    <div class="paper">【毕业论文：【题目】（进行中/已完成，简要说明）】</div>
+  </div>
+
+  <h2>研究兴趣</h2>
+  <ul>
+    <li>【1-3 个方向，各一句：为什么感兴趣 + 你已有的相关积累】</li>
+  </ul>
+
+  <h2>技能与荣誉</h2>
+  <ul>
+    <li>【研究工具：统计软件/编程语言/实验设备…】</li>
+    <li>【语言：CET-6 560】</li>
+    <li>【奖学金与奖项（写全称）】</li>
+  </ul>
+</div>
+</body>
+</html>

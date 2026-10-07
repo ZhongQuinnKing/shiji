@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"SimSun","宋体",serif; color:#000; line-height:1.55; font-size:14.5px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  .head { text-align:center; margin-bottom:6px; }
+  h1 { font-size:24px; letter-spacing:6px; margin-bottom:8px; }
+  .contact { font-size:13px; }
+  .contact span { margin:0 8px; }
+  h2 { font-size:15px; margin:14px 0 6px; padding:2px 0 2px 0;
+       border-top:1.5px solid #000; border-bottom:1.5px solid #000;
+       letter-spacing:2px; }
+  .item { margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; font-weight:700; }
+  .row .time { font-weight:400; }
+  ul { margin-left:20px; }
+  li { margin-bottom:3px; }
+  .photo { float:right; width:26mm; height:34mm; border:1px solid #999;
+           margin:0 0 8px 12px; text-align:center; font-size:13px; color:#aaa;
+           line-height:34mm; letter-spacing:6px; }  /* 需要证件照时用；不需要则删掉这个 div */
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="photo">照片</div>
+  <div class="head">
+    <h1>【姓名】</h1>
+    <div class="contact">
+      <span>【政治面貌】</span><span>【籍贯】</span><span>【电话】</span><span>【邮箱】</span>
+    </div>
+  </div>
+
+  <h2>教 育 背 景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】　【专业】　【学历】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【GPA/排名、奖学金（写全称，如：2024 年度校级一等奖学金）】</li></ul>
+  </div>
+
+  <h2>实 习 经 历</h2>
+  <div class="item">
+    <div class="row"><span>【单位】　【岗位】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【做了什么 + 结果】</li></ul>
+  </div>
+
+  <h2>校 园 经 历</h2>
+  <div class="item">
+    <div class="row"><span>【组织/职务】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【学生干部经历、组织活动（国企看重，写全）】</li></ul>
+  </div>
+
+  <h2>技 能 与 证 书</h2>
+  <ul>
+    <li>【证书：按含金量排序】</li>
+    <li>【技能：写到能验证的程度】</li>
+    <li>【语言：CET-6 560】</li>
+  </ul>
+</div>
+</body>
+</html>

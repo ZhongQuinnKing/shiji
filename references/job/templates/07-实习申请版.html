@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+         color:#252525; line-height:1.55; font-size:14px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  h1 { font-size:26px; text-align:center; letter-spacing:3px; margin-bottom:5px; }
+  .contact { text-align:center; color:#555; font-size:13px; margin-bottom:16px; }
+  .contact span:not(:last-child)::after { content:"  |  "; color:#ccc; }
+  h2 { font-size:14.5px; color:#42566e; border-bottom:1.5px solid #42566e;
+       padding-bottom:3px; margin:15px 0 8px; letter-spacing:1px; }
+  .item { margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; font-weight:600; }
+  .row .time { font-weight:400; color:#888; }
+  ul { margin-left:18px; }
+  li { margin-bottom:3px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>【姓名】</h1>
+  <div class="contact">
+    <span>【电话】</span><span>【邮箱】</span><span>求职意向：【实习岗位】</span><span>【可实习时间：每周 X 天，持续 X 个月】</span>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】 ｜ 【专业】 ｜ 【年级】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【GPA/排名（好就写）；与岗位相关的课程】</li></ul>
+  </div>
+
+  <h2>校园实践（课程项目 / 社团 / 比赛——都在这）</h2>
+  <div class="item">
+    <div class="row"><span>【项目/活动名】 ｜ 【你的角色】</span><span class="time">【时间】</span></div>
+    <ul>
+      <li>【做了什么 + 方法 + 结果（数字）——课程大作业也按"项目"来写】</li>
+      <li>【同上】</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><span>【第二段】 ｜ 【角色】</span><span class="time">【时间】</span></div>
+    <ul><li>【…】</li></ul>
+  </div>
+
+  <h2>技能与证书</h2>
+  <ul>
+    <li>【硬技能：写到能验证的程度】</li>
+    <li>【语言：CET-4/6 分数】</li>
+  </ul>
+
+  <h2>个人亮点</h2>
+  <ul>
+    <li>【事实型 2-3 条：能吃苦的证据（持续做过的长跑/兼职）、自驱的证据（自学完成的产出）、靠谱的证据（扛过的事）——每句带事实，不带形容词】</li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",sans-serif;
+         color:#1e1e1e; line-height:1.5; font-size:14px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  h1 { font-size:25px; font-weight:700; margin-bottom:4px; }
+  .contact { font-size:13px; color:#555; margin-bottom:16px; }
+  .contact span:not(:last-child)::after { content:"  |  "; color:#ccc; }
+  h2 { font-size:14px; letter-spacing:1px; color:#0b5394; border-bottom:1.5px solid #0b5394;
+       padding-bottom:3px; margin:15px 0 8px; }
+  .item { margin-bottom:11px; }
+  .row { display:flex; justify-content:space-between; font-weight:600; }
+  .row .time { font-weight:400; color:#777; }
+  .stack { color:#0b5394; font-size:13px; margin-bottom:2px; }  /* 技术栈行 */
+  ul { margin-left:18px; }
+  li { margin-bottom:3px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>【姓名】</h1>
+  <div class="contact">
+    <span>【电话】</span><span>【邮箱】</span><span>GitHub：【链接】</span><span>求职意向：【后端/前端/算法…】</span>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】 ｜ 【专业】 ｜ 【学历】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【GPA/排名、相关课程（数据结构/操作系统/…）】</li></ul>
+  </div>
+
+  <h2>项目经历（技术岗核心区，倒序）</h2>
+  <div class="item">
+    <div class="row"><span>【项目名】 ｜ 【角色】</span><span class="time">【时间】</span></div>
+    <div class="stack">技术栈：【语言 / 框架 / 数据库 / 工具】</div>
+    <ul>
+      <li>【解决什么问题 + 怎么实现 + 结果（性能/规模/指标：QPS、准确率、耗时下降…）】</li>
+      <li>【难点与你的方案（面试官最想问的就是这句）】</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="row"><span>【项目二】 ｜ 【角色】</span><span class="time">【时间】</span></div>
+    <div class="stack">技术栈：【…】</div>
+    <ul><li>【同上结构】</li></ul>
+  </div>
+
+  <h2>实习经历</h2>
+  <div class="item">
+    <div class="row"><span>【公司】 ｜ 【岗位】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【你负责的模块 + 技术细节 + 结果】</li></ul>
+  </div>
+
+  <h2>技能</h2>
+  <ul>
+    <li>语言：【C++/Python/Java…——按熟练度排，慎写"精通"】</li>
+    <li>框架与工具：【…】</li>
+    <li>其他：【英语 CET-6 560；竞赛奖项】</li>
+  </ul>
+</div>
+</body>
+</html>

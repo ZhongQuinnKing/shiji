@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>简历</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei","宋体",sans-serif;
+         color:#23302e; line-height:1.55; font-size:14px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  .head { text-align:center; margin-bottom:14px; }
+  h1 { font-size:25px; letter-spacing:5px; margin-bottom:6px; }
+  .contact { font-size:13px; color:#555; }
+  .contact span { margin:0 7px; }
+  h2 { font-size:15px; color:#1f6f5c; letter-spacing:2px; margin:14px 0 7px;
+       border-left:4px solid #1f6f5c; padding-left:8px; }  /* 温和的青色，教育感 */
+  .item { margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; font-weight:600; }
+  .row .time { font-weight:400; color:#777; }
+  ul { margin-left:20px; }
+  li { margin-bottom:3px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <h1>【姓名】</h1>
+    <div class="contact">
+      <span>【电话】</span><span>【邮箱】</span><span>求职意向：【语文/数学/英语…教师】</span>
+    </div>
+  </div>
+
+  <h2>资质与证书（教育岗先看这里）</h2>
+  <ul>
+    <li>教师资格证：【学段与学科，如"高级中学语文"】</li>
+    <li>普通话：【二级甲等 / 一级乙等】</li>
+    <li>【其他：心理咨询师、竞赛指导经历、英语等级…】</li>
+  </ul>
+
+  <h2>教育背景</h2>
+  <div class="item">
+    <div class="row"><span>【学校】 ｜ 【专业（师范/非师范）】 ｜ 【学历】</span><span class="time">【起止时间】</span></div>
+    <ul><li>【GPA/排名；师范生标注教育实习安排】</li></ul>
+  </div>
+
+  <h2>教学经历（实习教学 / 支教 / 家教 / 机构）</h2>
+  <div class="item">
+    <div class="row"><span>【学校/机构】 ｜ 【岗位（如：实习教师）】</span><span class="time">【起止时间】</span></div>
+    <ul>
+      <li>【带哪个班 / 多少学生 / 多少课时；做了什么（教学设计、作业批改、班级管理）】</li>
+      <li>【结果：成绩变化、学生反馈、评优…】</li>
+    </ul>
+  </div>
+
+  <h2>教学技能</h2>
+  <ul>
+    <li>【课件与板书：PPT/希沃白板/三笔字…】</li>
+    <li>【课堂管理、家校沟通相关经历】</li>
+  </ul>
+
+  <h2>校园经历</h2>
+  <div class="item">
+    <div class="row"><span>【组织/活动】 ｜ 【角色】</span><span class="time">【时间】</span></div>
+    <ul><li>【支教、义教、宣讲等与讲台相关的经历优先】</li></ul>
+  </div>
+</div>
+</body>
+</html>

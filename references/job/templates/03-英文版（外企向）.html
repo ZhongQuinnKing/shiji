@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Georgia","Times New Roman",serif; color:#1a1a1a; line-height:1.5;
+         font-size:13.5px; background:#f5f5f5; }
+  .page { width:210mm; min-height:297mm; padding:16mm 18mm; margin:0 auto; background:#fff; }
+  h1 { font-size:24px; letter-spacing:2px; margin-bottom:4px; }
+  .contact { font-size:12.5px; color:#444; margin-bottom:16px; }
+  .contact span:not(:last-child)::after { content:" · "; }
+  h2 { font-size:12.5px; text-transform:uppercase; letter-spacing:2.5px;
+       color:#000; border-bottom:1px solid #999; padding-bottom:3px; margin:16px 0 8px; }
+  .item { margin-bottom:10px; }
+  .row { display:flex; justify-content:space-between; font-weight:bold; }
+  .row .time { font-weight:normal; color:#555; }
+  .sub { font-style:italic; color:#444; margin-bottom:2px; }
+  ul { margin-left:18px; }
+  li { margin-bottom:3px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; padding:14mm 16mm; width:auto; min-height:auto; }
+    @page { size:A4; margin:0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>【Full Name】</h1>
+  <div class="contact">
+    <span>【Phone】</span><span>【Email】</span><span>【City】</span><span>【LinkedIn/Portfolio, optional】</span>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="row"><span>【University】, 【Major】, 【Degree】</span><span class="time">【Date】</span></div>
+    <div class="sub">GPA: 【x.x/x.x (Top x%)】｜ Relevant Coursework: 【…】</div>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="row"><span>【Company】, 【Title】</span><span class="time">【Date】</span></div>
+    <ul>
+      <li>【Led/Built/Analyzed… + what you did + results with numbers — past tense verbs】</li>
+      <li>【…】</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="row"><span>【Project Name】, 【Role】</span><span class="time">【Date】</span></div>
+    <ul><li>【What you did + tools + outcome】</li></ul>
+  </div>
+
+  <h2>Skills &amp; Certificates</h2>
+  <ul>
+    <li>【Hard skills】</li>
+    <li>【Languages: CET-6 560 / IELTS 7.0】</li>
+  </ul>
+</div>
+</body>
+</html>
