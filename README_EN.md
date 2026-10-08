@@ -1,4 +1,4 @@
-# Shiji · A College-to-Career Mentor for Your AI Assistant
+# Shiji · A High-School-to-Career Mentor for Your AI Assistant
 
 > "Climb one step at a time — both feet firm on each, then step again."
 > — *Book of Rites* (《礼记·曲礼》), origin of the name 拾级
@@ -6,9 +6,9 @@
 [中文 README](README.md)
 
 **Shiji (拾级, "climbing step by step")** is a free, open-source skill pack that turns
-any capable AI assistant into a mentor for Chinese college students, grad students,
-and early-career professionals — covering the full journey from dorm-room conflicts
-to job offers.
+any capable AI assistant into a mentor for Chinese students and young professionals —
+covering the full journey from **gaokao (college entrance exam) application** through
+university, grad school, and the first years of work.
 
 Install it, then just ask in Chinese: *"帮我改简历"*, *"室友半夜打游戏怎么办"*,
 *"考研还是找工作"* — it routes to the right guide and answers with concrete,
@@ -18,24 +18,33 @@ usable steps, not vague advice.
 
 | Line | Covers |
 |------|--------|
-| 求职 Job | Résumés (14 guides + 8 print-ready HTML templates + an application tracker), interviews, negotiation |
-| 职场 Workplace | First 90 days, managing up, collaboration, conflict self-protection, raises & promotions |
+| 高考 Gaokao | Subject choice, application rules (parallel preferences, rejection mechanics), school/major selection, special admissions, retake decisions |
+| 大学 University | GPA, changing major, minors & double degrees, scholarships, academic warning, competitions, campus health insurance |
+| 考研 Grad-school exam | Decide, choose schools, plan, register, retake decisions, interviews & transfers, **recommendation-based admission (推免)**, college-to-degree upgrade |
+| 考公 Civil service | National/provincial exams vs. selective recruitment, post selection, aptitude & essay tests, civil-service interviews, background check & medical |
+| 求职 Job | Résumés (14 guides + 8 print-ready HTML templates + an application tracker), interviews, negotiation, **tripartite agreement & social insurance** |
+| 职场 Workplace | First 90 days, managing up, onboarding compliance, probation & performance, social insurance rights, **frontline/blue-collar roles** |
 | 人际关系 Relationships | Roommates, classmates, advisors, clubs, friendship |
-| 论文 Thesis | Topic selection, literature search (CNKI), proposal, research methods, data, plagiarism/AIGC checks, defense |
-| 考研 Grad-school exam | Decide, choose schools, plan, register, retake decisions, interviews & transfers |
-| 学习 Study | Learning science, methods, exams, CET-4/6, using AI to study |
-| 研究生 Grad life | Three-year rhythm, research basics, publishing, PhD applications |
-| 留学 Study abroad | Applications, IELTS/TOEFL, visas, campus life abroad, career paths |
-| 生活 Life | Money, part-time jobs, time management, mental well-being |
+| 论文 Thesis | Topic selection, literature search (CNKI), proposal, research methods, data, plagiarism/AIGC checks, defense, post-graduation audits |
+| 学习 Study | Learning science, methods by subject, exams, CET-4/6, using AI to study |
+| 研究生 Grad life | Three-year rhythm, research basics, publishing & authorship, lab dynamics, PhD applications |
+| 留学 Study abroad | Applications, IELTS/TOEFL, visas, campus life abroad, career paths, portfolio for arts |
+| 生活 Life | Money, part-time jobs, time management, mental well-being, **first apartment rental** |
+| 特殊通道 Special paths | Military service, students with disabilities, Hong Kong/Macau/Taiwan students, preparatory programs, adult education |
 
-Plus: a **cross-path roadmap**, a **reference & sources system**, and a **12-question
+Plus: a **cross-path roadmap**, a **reference & sources system**, an **information
+literacy guide** (how to search, how to judge sources), and a **14-question
 self-test** to verify your installation.
+
+**12 lines, 150 guides** — from gaokao to the workplace.
 
 ## Design principles
 
 - **Answers you can act on** — every reply ends with "the first thing you can do today/tonight"
 - **Scripts as finished sentences** — exact words you can send, not adjectives
-- **Dual-source answers** — built-in knowledge × live web search for time-sensitive info
+- **Dual-source answers** — built-in knowledge × live web search for time-sensitive info,
+  **and region-aware search** (social-insurance rates, upgrade-exam policies and civil-service
+  postings differ by province; a national figure is no answer)
 - **Honest by design** — says "not sure" when unsure; official sources win
 - **Red lines** — never writes essays for students, never diagnoses, never looks people up
 
