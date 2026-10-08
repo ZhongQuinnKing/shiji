@@ -1,21 +1,59 @@
-MIT License
-
+拾级 · 从校园到工位 —— 许可声明
 Copyright (c) 2026 ZhongQuinnKing
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+本仓库采用双轨许可（dual license）：
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+────────────────────────────────────────────
+一、内容与文档（CC BY-NC-ND 4.0）
+────────────────────────────────────────────
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+适用范围：references/、docs/、README.md、README_EN.md、自测题.md、CONTRIBUTING.md、
+CHANGELOG.md、MAINTAINING.md，以及本仓库内的一切文字内容与 HTML 模板。
+
+许可：知识共享 署名—非商业性使用—禁止演绎 4.0 国际（CC BY-NC-ND 4.0）
+
+**一览（四档，看这一块就够了）：**
+
+- **① 自己用、自己改（不发布、不分享）——完全自由**：
+  随便改、随便用，**无需授权、无需标注、无需联系我们**（自用的事，不用告诉任何人）
+- **② 原样分享——免费**：署名"拾级 / ZhongQuinnKing"、保留本许可、非商业用途
+- **③ 改过的对外发布 / 分享 / 宣传（非商业）——必须先取得授权**（详见下）
+- **④ 商业使用（改没改都一样）——必须联系我们议价授权**（详见下）
+
+**修改后再发布 / 分享 / 宣传（非商业用途）：**
+
+- **必须先取得我们的书面授权**——联系我们申请
+  （教育、公益等善意场景，我们一般免费放行）
+- **没有"标注即可发布"的替代路径**：任何修改版对外发布，都以拿到授权为前提；
+  未获授权的一律视为未获许可
+
+**商业使用——没有任何例外与豁免：**
+- **任何商业使用**（无论是否修改）：付费课程/付费资料、付费产品集成、
+  企业内训、代运营或咨询服务、以本项目内容招揽付费用户等，**都必须事先联系我们
+  沟通议价并取得书面授权**，未获授权一律禁止
+
+授权洽谈：请在本仓库提 issue，标题注明【商用授权】或【改编授权】
+（请勿在公开处留敏感信息），我们收到后会与您私下联系。
+
+协议全文：https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.zh-Hans
+（简述版）：https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-Hans
+
+────────────────────────────────────────────
+二、代码脚本（MIT）
+────────────────────────────────────────────
+
+适用范围：scripts/ 目录下的全部代码。
+
+许可：MIT License，全文见 scripts/LICENSE。
+
+────────────────────────────────────────────
+三、名称与品牌
+────────────────────────────────────────────
+
+"拾级"名称及相关品牌标识不随上述任何许可授予——未经允许，不得以"拾级"名义
+发布衍生品，或暗示与本项目存在官方关联。
+
+────────────────────────────────────────────
+
+（一句话：**自己看、自己学、自己改着用、原样分享——永远免费；改过要对外发——
+先来拿授权；想拿它挣钱——必须来找我们议价，没有例外。**）

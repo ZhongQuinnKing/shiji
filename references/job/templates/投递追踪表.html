@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>求职投递追踪表</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,"PingFang SC","Microsoft YaHei","宋体",sans-serif;
+         color:#222; background:#f5f5f5; font-size:14px; line-height:1.5;
+         padding:24px 16px 60px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:22px; margin-bottom:6px; }
+  .tip { color:#666; font-size:13px; margin-bottom:14px; }
+  .tip b { color:#222; }
+  .bar { display:flex; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+  button { font:inherit; padding:7px 14px; border:1px solid #222; background:#222;
+           color:#fff; border-radius:6px; cursor:pointer; }
+  button.ghost { background:#fff; color:#222; }
+  button:hover { opacity:.85; }
+  table { width:100%; border-collapse:collapse; background:#fff; }
+  th, td { border:1px solid #ddd; padding:6px 8px; text-align:left; vertical-align:top; }
+  th { background:#f0f0f0; font-weight:600; white-space:nowrap; font-size:13px; }
+  td input, td select, td textarea { width:100%; border:none; outline:none; font:inherit;
+         background:transparent; resize:vertical; min-height:22px; }
+  td select { cursor:pointer; }
+  tr.example td { color:#999; }
+  tr.example td::before { content:""; }
+  .del { color:#999; cursor:pointer; border:none; background:none; font-size:16px; padding:0 4px; }
+  .del:hover { color:#c00; }
+  .stat { color:#666; font-size:12px; margin-top:8px; }
+  @media print {
+    body { background:#fff; padding:0; font-size:12px; }
+    .tip, .bar, .stat { display:none; }
+    th, td { border:1px solid #999; }
+    td input, td select, td textarea { appearance:none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>求职投递追踪表</h1>
+  <p class="tip">
+    用法：<b>直接点格子里打字</b>，数据自动存在本机浏览器（刷新不丢）；
+    换设备用「导出 CSV」带走。<b>节奏建议</b>：每周五扫一遍「下次跟进」列——
+    过期未跟进的，当天补一封跟进消息（跟进话术见拾级 `job/09`）。
+  </p>
+  <div class="bar">
+    <button onclick="addRow()">+ 添加一行</button>
+    <button class="ghost" onclick="exportCSV()">导出 CSV</button>
+    <button class="ghost" onclick="clearAll()">清空全部</button>
+  </div>
+  <table id="t">
+    <thead>
+      <tr>
+        <th style="width:15%">公司</th>
+        <th style="width:15%">岗位</th>
+        <th style="width:9%">投递日期</th>
+        <th style="width:10%">渠道</th>
+        <th style="width:11%">状态</th>
+        <th style="width:11%">下次跟进</th>
+        <th>备注（联系人 / 面试反馈 / 薪资口径）</th>
+        <th style="width:4%"></th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <p class="stat" id="stat"></p>
+</div>
+<script>
+(function () {
+  var KEY = "shiji-tracker-v1";
+  var tbody = document.querySelector("#t tbody");
+
+  var statuses = ["已投递", "笔试", "一面", "二面", "终面", "Offer", "已挂", "已拒"];
+
+  function load() { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch (e) { return []; } }
+  function save() {
+    var rows = [];
+    tbody.querySelectorAll("tr").forEach(function (tr) {
+      var r = [];
+      tr.querySelectorAll("input,select,textarea").forEach(function (c) { r.push(c.value); });
+      rows.push(r);
+    });
+    try { localStorage.setItem(KEY, JSON.stringify(rows)); } catch (e) {}
+    stat();
+  }
+  function stat() {
+    var n = tbody.querySelectorAll("tr:not(.example)").length;
+    var offer = 0, active = 0;
+    tbody.querySelectorAll("tr:not(.example) select").forEach(function (s) {
+      if (s.value === "Offer") offer++;
+      else if (["已投递","笔试","一面","二面","终面"].indexOf(s.value) >= 0) active++;
+    });
+    document.getElementById("stat").textContent =
+      "共 " + n + " 条 · 进行中 " + active + " · Offer " + offer;
+  }
+  function cell(row, idx, value, isSelect) {
+    var td = document.createElement("td");
+    if (isSelect) {
+      var s = document.createElement("select");
+      statuses.forEach(function (st) {
+        var o = document.createElement("option");
+        o.value = st; o.textContent = st;
+        if (st === value) o.selected = true;
+        s.appendChild(o);
+      });
+      s.addEventListener("change", save);
+      td.appendChild(s);
+    } else {
+      var inp = idx === 6 ? document.createElement("textarea") : document.createElement("input");
+      inp.value = value || "";
+      if (idx === 2 || idx === 5) inp.placeholder = "YYYY-MM-DD";
+      inp.addEventListener("input", save);
+      td.appendChild(inp);
+    }
+    row.appendChild(td);
+    return td;
+  }
+  function addRow(data, example) {
+    var tr = document.createElement("tr");
+    if (example) tr.className = "example";
+    for (var i = 0; i < 7; i++) cell(tr, i, data ? data[i] : "", i === 4);
+    var td = document.createElement("td");
+    var btn = document.createElement("button");
+    btn.className = "del"; btn.textContent = "×"; btn.title = "删除此行";
+    btn.onclick = function () { tr.remove(); save(); };
+    td.appendChild(btn);
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+    return tr;
+  }
+
+  window.addRow = function () { addRow(null, false); save(); };
+  window.clearAll = function () {
+    if (confirm("确定清空全部记录？（不可恢复）")) {
+      tbody.innerHTML = ""; save();
+    }
+  };
+  window.exportCSV = function () {
+    var lines = [];
+    var head = ["公司","岗位","投递日期","渠道","状态","下次跟进","备注"];
+    lines.push(head.join(","));
+    tbody.querySelectorAll("tr").forEach(function (tr) {
+      var r = [];
+      tr.querySelectorAll("input,select,textarea").forEach(function (c) {
+        r.push('"' + (c.value || "").replace(/"/g, '""') + '"');
+      });
+      lines.push(r.join(","));
+    });
+    var blob = new Blob(["﻿" + lines.join("\n")], { type: "text/csv;charset=utf-8" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "投递追踪表.csv";
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+
+  // 初始化：有存档读存档；没有就给一行示例
+  var saved = load();
+  if (saved.length) {
+    saved.forEach(function (r) { addRow(r, false); });
+  } else {
+    addRow(["示例：某某科技","运营实习","2026-09-20","官网内推","一面","2026-10-10","HR 王姐；一面反馈：案例讲得不够细，下轮补"], true);
+  }
+  stat();
+})();
+</script>
+</body>
+</html>
