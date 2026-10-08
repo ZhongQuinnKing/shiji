@@ -192,7 +192,7 @@ git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
   授权洽谈：本仓库提 issue（选「许可申请」模板），标题注明【商用授权】或【改编授权】。
 - **代码脚本**（`scripts/`）：MIT。
 - "拾级"名称与品牌不随许可授予。
-- 全文见 [LICENSE](LICENSE)。
+- 全文见 [LICENSE](LICENSE)（CC BY-NC-ND 4.0 法律文本）与 [NOTICE.md](NOTICE.md)（中文四档说明）。
 
 ---
 
