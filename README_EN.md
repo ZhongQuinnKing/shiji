@@ -1,5 +1,8 @@
 # Shiji · A College-to-Career Mentor for Your AI Assistant
 
+> "Climb one step at a time — both feet firm on each, then step again."
+> — *Book of Rites* (《礼记·曲礼》), origin of the name 拾级
+
 [中文 README](README.md)
 
 **Shiji (拾级, "climbing step by step")** is a free, open-source skill pack that turns
