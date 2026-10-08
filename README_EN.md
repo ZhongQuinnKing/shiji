@@ -33,7 +33,7 @@ usable steps, not vague advice.
 | 特殊通道 Special paths | Military service, students with disabilities, Hong Kong/Macau/Taiwan students, preparatory programs, adult education |
 
 Plus: a **cross-path roadmap**, a **reference & sources system**, an **information
-literacy guide** (how to search, how to judge sources), and a **14-question
+literacy guide** (how to search, how to judge sources), and an **18-question
 self-test** to verify your installation.
 
 **12 lines, 151 guides** — from gaokao to the workplace.
