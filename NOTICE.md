@@ -5,6 +5,9 @@ Copyright (c) 2026 ZhongQuinnKing
 [LICENSE](LICENSE)（CC BY-NC-ND 4.0 标准法律文本）与
 [scripts/LICENSE](scripts/LICENSE)（MIT）为准。
 
+（注：GitHub 的自动许可识别不含 CC 的 NC/ND 变体，仓库页许可栏会显示"Other"——
+这是所有 NC/ND 项目的共同情况，一切以 LICENSE 的法律文本为准。）
+
 本仓库采用双轨许可（dual license）：
 
 ────────────────────────────────────────────
