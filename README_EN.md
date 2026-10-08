@@ -36,7 +36,7 @@ Plus: a **cross-path roadmap**, a **reference & sources system**, an **informati
 literacy guide** (how to search, how to judge sources), and a **14-question
 self-test** to verify your installation.
 
-**12 lines, 150 guides** — from gaokao to the workplace.
+**12 lines, 151 guides** — from gaokao to the workplace.
 
 ## Design principles
 

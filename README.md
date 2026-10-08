@@ -1,9 +1,10 @@
-# 拾级 · 从校园到工位的军师
+# 拾级 · 从高三到工位的军师
 
 > 「拾级聚足，连步以上。」——《礼记·曲礼》
 
-**装进你 AI 里的一位"过来人"**——从大一第一次和室友闹别扭，到入职后第一次向领导汇报：
-人际关系、学习方法、毕业论文、考研、留学、求职、职场，**你问什么，它答什么。**
+**装进你 AI 里的一位"过来人"**——从高三填志愿，到入职后第一次向领导汇报：
+高考志愿、大学生活、学习方法、毕业论文、考研推免、考公考编、求职、职场、留学，
+**你问什么，它答什么。**
 
 > 在线预览（不用装，先看看）：**https://ZhongQuinnKing.github.io/shiji/** ｜
 > English: [README_EN.md](README_EN.md)
@@ -41,9 +42,10 @@
 - 有底线——该拒绝的会拒绝，拿不准的会直说（见下"红线"）
 
 > **English TL;DR** — A mentor skill for AI assistants, covering the journey from
-> college to career: relationships, study, thesis, grad-school entrance, job
-> hunting (resume/interview/offers), graduate life and the workplace. Ask
-> anything; it figures out your situation from the question itself.
+> high school to career: gaokao applications, university life, study, thesis,
+> grad-school entrance, civil service, job hunting (resume/interview/offers),
+> graduate life and the workplace. Ask anything; it figures out your situation
+> from the question itself.
 
 ## 它怎么工作
 
@@ -142,7 +144,7 @@
   （备注栏对不上就出局、竞争比怎么估）/ 行测 / 申论 / **公考面试**（与企业面试
   打法是反的）/ 政审体检与录用 / 基层与编外渠道（三支一扶、西部计划、
   社区工作者、军队文职）/ 报名与资格审核实务
-- **特殊通道与少数处境五篇**：入伍与兵役登记（学费补偿、退役升学红利、
+- **特殊通道与少数处境六篇**：入伍与兵役登记（学费补偿、退役升学红利、
   加分与专项计划二选一）/ 残疾学生（合理便利怎么申请、定向渠道）/ 港澳台侨学生 /
   预科与民族班 / 在职学历（**2025 秋起"函授""业余"统一改称"非脱产"**）
 - **总纲新增**：信息与信源（检索式怎么写、信源分级、交叉验证、向人打听的姿势）
