@@ -179,6 +179,11 @@ git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
 
 九条线已全部开通（详见上）；每篇都按"准/深/全"标准持续加深。
 
+**遇到问题？** 先看 [常见问题（FAQ）](docs/FAQ.md)——装机、更新、时效、隐私、
+边界、参与方式都在里面；想提问或交流去
+[Discussions](https://github.com/ZhongQuinnKing/shiji/discussions)；
+要纠错、投稿走 [issues](https://github.com/ZhongQuinnKing/shiji/issues/new/choose)。
+
 ## License（双轨许可）
 
 - **内容与文档**（参考文献篇目、模板、预览页等）：**CC BY-NC-ND 4.0**

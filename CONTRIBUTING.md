@@ -28,6 +28,9 @@
   省得白写
 - PR 请填模板（改了什么/为什么/自检情况）：
   ①跑过 `python3 scripts/check_content.py` ②更新了 `CHANGELOG.md`
+- **轻交流走 [Discussions](https://github.com/ZhongQuinnKing/shiji/discussions)**
+  （提问、想法、晒用法）；**要改内容走 issue / PR**——在 issue 里留痕，
+  方便核完后收进 CHANGELOG
 
 ## 审核标准
 
