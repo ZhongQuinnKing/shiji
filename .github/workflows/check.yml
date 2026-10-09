@@ -20,3 +20,7 @@ jobs:
       - name: 校对扫描（提醒式，逐条人工复核，不阻断合并）
         run: python3 scripts/check_typos.py --strict
         continue-on-error: true
+
+      - name: 外部链接探测（提醒式，反爬/限流会误报，逐条人工复核，不阻断合并）
+        run: python3 scripts/check_links.py
+        continue-on-error: true
