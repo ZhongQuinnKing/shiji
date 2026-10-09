@@ -17,6 +17,9 @@ jobs:
       - name: 内容自检（必需文件 / 引用断链 / AI 腔 / 占位符 / 红线短语 / frontmatter）
         run: python3 scripts/check_content.py
 
+      - name: 预览页计数一致（卡片篇数 vs references 实际）
+        run: python3 scripts/sync_index_counts.py --check
+
       - name: 校对扫描（提醒式，逐条人工复核，不阻断合并）
         run: python3 scripts/check_typos.py --strict
         continue-on-error: true
