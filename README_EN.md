@@ -34,7 +34,8 @@ usable steps, not vague advice.
 
 Plus: a **cross-path roadmap**, a **reference & sources system**, an **information
 literacy guide** (how to search, how to judge sources), and an **18-question
-self-test** to verify your installation.
+self-test** to verify your installation — or run `python3 scripts/selfcheck.py`
+for a 3-question automated check (routing / red lines / honesty).
 
 **12 lines, 152 guides** — from gaokao to the workplace.
 
@@ -78,6 +79,14 @@ literacy); `SKILL.md` routes each question to the right directory.
 
 Or drag-and-drop: download the ZIP (Code → Download ZIP), unzip, and upload the folder
 via the assistant's "Skills" panel.
+
+For other assistants (ChatGPT, Kimi, Qwen, etc.): upload the relevant `references/`
+folders into the assistant's knowledge base / custom bot — same content, same rules.
+Small context windows? Load only the red-lines file, the routing table in `SKILL.md`,
+and the 1-2 guides you need (see FAQ).
+
+Common questions: [docs/FAQ.md](docs/FAQ.md) (Chinese) — install, updates,
+timeliness, privacy, boundaries.
 
 **Claude Code / Codex (command line):**
 
