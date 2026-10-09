@@ -229,6 +229,9 @@ git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
 覆盖口径：**没碰红线、不违规的，就该在库里**——受众差异轴（学历、学校层次、
 国内外、地区、专业门类、人生阶段、特殊身份）逐轴对过表。
 
+2026 年 10 月起，收录于 [chinese-independent-developer](https://github.com/1c7/chinese-independent-developer)
+（国内独立开发者项目清单，6 万+ 星）程序员版。
+
 **遇到问题？** 先看 [常见问题（FAQ）](docs/FAQ.md)——装机、更新、时效、隐私、
 边界、参与方式都在里面；想提问或交流去
 [Discussions](https://github.com/ZhongQuinnKing/shiji/discussions)；

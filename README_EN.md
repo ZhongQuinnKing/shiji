@@ -88,3 +88,6 @@ Content is written from scratch — teaching cases are fictional or adapted.
 
 *The project is Chinese-first (the audience is Chinese students). This README is a
 courtesy summary for non-Chinese readers.*
+
+Listed in [chinese-independent-developer](https://github.com/1c7/chinese-independent-developer)
+(a 60k+ star curated list of Chinese indie projects), Programmer Edition.
