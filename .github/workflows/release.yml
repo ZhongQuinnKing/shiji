@@ -18,8 +18,7 @@ jobs:
 
       - name: 打包（英文 asset 名——gh 会吞中文文件名）
         run: |
-          python3 scripts/make_release_zip.py
-          for f in 拾级-*.zip; do mv "$f" "shiji-${f#拾级-}"; done
+          python3 scripts/make_release_zip.py "${GITHUB_REF_NAME}" -o "shiji-${GITHUB_REF_NAME}.zip"
           ls -la *.zip
 
       - name: 发 GitHub Release
