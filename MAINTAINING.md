@@ -18,6 +18,8 @@ references/
                     十二条线（编号 00 起；覆盖"高三到工位"全程）
   job/templates/      八套 HTML 简历模板 + 投递追踪表
                       （浏览器打印即 PDF）
+  （运行时）profile/  用户轻档案目录——**已在 .gitignore，绝不进仓库**；
+                      公开的"档案长什么样"看 docs/示例档案.md
 agents/openai.yaml  跨平台适配
 CHANGELOG.md        更新记录
 ```
