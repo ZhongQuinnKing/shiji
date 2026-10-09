@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 内容门禁（发版前过闸）
+        run: python3 scripts/check_content.py
+
+      - name: 打包（英文 asset 名——gh 会吞中文文件名）
+        run: |
+          python3 scripts/make_release_zip.py
+          for f in 拾级-*.zip; do mv "$f" "shiji-${f#拾级-}"; done
+          ls -la *.zip
+
+      - name: 发 GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "${GITHUB_REF_NAME}" shiji-*.zip \
+            --title "${GITHUB_REF_NAME}" --generate-notes
