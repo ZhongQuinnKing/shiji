@@ -259,15 +259,17 @@ git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
 
 ## 姊妹篇
 
-同一个家族的另外两个免费开源项目（配合使用更完整）：
+同一个家族的另外三个免费开源项目（配合使用更完整）：
 
 - [采诗](https://github.com/ZhongQuinnKing/caishi) —— 中文互联网能力包：
   让 AI 直连抖音 / B站 / 小红书 / 微博 / 知乎 / 公众号等 33+ 个中文平台
 - [夜诵](https://github.com/ZhongQuinnKing/yesong) —— 离线信息哨兵：
   AI 睡着时替你盯世界（热榜 / GitHub 动态 / Hacker News），零成本、不调大模型
+- [玉尺](https://github.com/ZhongQuinnKing/yuchi) —— 中文写作的一把尺：
+  量节奏、点套话、标平仄，文章与诗都能过一遍（写完自查的趁手家伙）
 
 名字同出一源：《汉书·礼乐志》"乃立乐府，采诗夜诵"——采诗去读，夜诵去守，
-拾级陪你从校园走到工位。
+玉尺去量，拾级陪你从高三走到工位。
 
 ## 关于内容与版权
 
