@@ -38,6 +38,28 @@ self-test** to verify your installation.
 
 **12 lines, 152 guides** — from gaokao to the workplace.
 
+## Repository layout
+
+Directory names are pinyin — this table maps them to the lines above:
+
+| Directory | Line |
+|-----------|------|
+| `references/gaokao/` | 高考 Gaokao |
+| `references/daxue/` | 大学 University |
+| `references/kaoyan/` | 考研 Grad-school exam |
+| `references/gongkao/` | 考公 Civil service |
+| `references/job/` | 求职 Job |
+| `references/workplace/` | 职场 Workplace |
+| `references/life/` | 人际关系 Relationships · 生活 Life |
+| `references/thesis/` | 论文 Thesis |
+| `references/study/` | 学习 Study |
+| `references/grad/` | 研究生 Grad life |
+| `references/liuxue/` | 留学 Study abroad |
+| `references/tebie/` | 特殊通道 Special paths |
+
+Shared files live at the top of `references/` (red lines, roadmap, sources, information
+literacy); `SKILL.md` routes each question to the right directory.
+
 ## Design principles
 
 - **Answers you can act on** — every reply ends with "the first thing you can do today/tonight"
