@@ -219,6 +219,8 @@ git clone https://github.com/ZhongQuinnKing/shiji ~/.claude/skills/shiji
 ## 诚实原则
 
 拿不准的直说"这块我不确定"；政策与考情有时效，会提醒你核实最新——**绝不硬编**。
+我们验证到什么程度、哪些还没验过，也如实写在这份
+[验证状态](docs/validation.md)里。
 
 ## 状态
 
