@@ -35,8 +35,11 @@ def main() -> int:
         out.unlink()
 
     count = 0
+    out_res = out.resolve()
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
         for p in sorted(ROOT.rglob("*")):
+            if p.resolve() == out_res:
+                continue  # 不把输出包自己卷进去：读写同一文件会读到 EOF 前一直增长（死循环）
             rel = p.relative_to(ROOT.parent)  # 顶层目录名保持 shiji/
             if any(part in EXCLUDE_ANY for part in p.relative_to(ROOT).parts):
                 continue
